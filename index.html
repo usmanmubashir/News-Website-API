@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan News Forum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+<nav>
+    <div id="mainNav">
+
+<a href="" id="imageBox">
+    <img src="assets/logo.png" alt="PNF Logo" id="logoIMG">
+</a>
+
+
+<div id="navTopics">
+
+
+    <div class="heading" id="nav-pakistan" onclick="onNavItemClick('pakistan')">
+        Pakistan
+    </div>
+    
+    
+    <div class="heading" id="nav-bussines" onclick="onNavItemClick('health')">
+        Health
+    </div>
+    
+    
+    <div class="heading" id="nav-tech" onclick="onNavItemClick('technology')">
+        Technology
+    </div>
+    
+    
+    <div class="heading" id="nav-international" onclick="onNavItemClick('international')">
+        International
+    </div>
+
+
+</div>
+
+<div id="searchBox">
+
+<input type="text" class="" id="srchinpt" placeholder="Search here..." >
+<button id="srchBTN" onclick="inputSearch()">Search</button>
+
+</div>
+
+    </div>
+</nav>
+
+
+<main id="main">
+
+    <div id="card-parent">
+
+    </div>
+
+    <template id="card-template">
+<div id="card">
+    <img src="https://via.placeholder.com/400x200" alt="" id="cardImage">
+    <h2 id="title">Title is here</h2>
+    <h5 id="secondTitle">Second title is here</h5>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos cum nostrum libero minima ab nulla delectus soluta sit eaque!</p>
+</div>
+</template>
+</main>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
